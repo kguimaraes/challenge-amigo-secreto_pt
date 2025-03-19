@@ -2,7 +2,7 @@
 let amigos = [];
 
 function adicionarAmigo() {
-    const nomeInput = document.getElementById("amigo(a)");
+    const nomeInput = document.getElementById("amigo");
     const nome = nomeInput.value.trim();
     
     if (nome === "") {
@@ -35,5 +35,5 @@ function sortearAmigo() {
     const indiceAleatorio = Math.floor(Math.random() * amigos.length);
     const amigoSorteado = amigos[indiceAleatorio];
     
-    document.getElementById("resultado").innerHTML = "O amigo(a) secreto sorteado é: <strong>${amigoSorteado}</strong>";
+    document.getElementById("resultado").innerHTML = "O amigo secreto sorteado é: <strong>${amigoSorteado}</strong>";
 }
